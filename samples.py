@@ -119,4 +119,4 @@ Function to create a tree
 #         stars += 2
 #     print("*".center(lenght))
 
-# tree(4)
+# tree(6)
