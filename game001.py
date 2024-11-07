@@ -46,8 +46,8 @@ else:
     if user_choice == computer_choice:
         print("It's a draw!")
     elif (user_choice == 0 and computer_choice == 2) or \
-         (user_choice == 1 and computer_choice == 0) or \
-         (user_choice == 2 and computer_choice == 1):
+        (user_choice == 1 and computer_choice == 0) or \
+        (user_choice == 2 and computer_choice == 1):
         print('You win!')
     else:
         print('You lose!')
