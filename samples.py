@@ -153,3 +153,65 @@ Types of collections
 # conjuto = {'carro', True, 2, 3.5}
 # print(conjuto)
 # print(type(conjuto))
+
+'''
+5 Useful f Strings Tricks
+https://docs.python.org/3/library/string.html#formatspec
+'''
+##### TRICK 1 ####
+# name = "Alice"
+# age = 30
+
+# # Using the old format method
+# old_format = "Hello, my name is {} and I am {} years old".format(name, age)
+# print("Using format method:", old_format)
+
+# # Using f-strings
+# f_string = f"Hello, my name is {name} and I am {age} years old."
+# print("Using f-strings:", f_string)
+
+##### TRICK 2 ####
+# from datetime import datetime
+
+# price = 1234.56789
+# print(f"The price is ${price:.2f}")
+
+# large_number = 1000000
+# print(f"{large_number:,}")
+
+# now = datetime.now()
+# print(f"Today's date is {now:%y-%m-%d}")
+
+##### TRICK 2 ####
+'''Text alignment'''
+
+# name = "Alice"
+# name2 = "Bob"
+
+# print(f"{name:<10}")    # Left-align within 10 charcters
+# print(f"{name2:<10}")
+# print("-----------")
+
+# print(f"{name:>10}")    # Right-align within 10 charcters
+# print(f"{name2:>10}")
+# print("-----------")
+
+# print(f"{name:^10}")    # Center-align within 10 charcters
+# print(f"{name2:^10}")
+# print("-----------")
+
+##### TRICK 3 ####
+'''Format a table'''
+
+data = [
+    {"Name": "Alice", "Age": 30, "Occupation": "Engineer"},
+    {"Name": "Bob", "Age": 24, "Occupation": "Designer"},
+    {"Name": "Charlie", "Age": 29, "Occupation": "Doctor"},
+    {"Name": "David","Age": 35, "Occupation": "Teacher"}
+]
+
+print(f"{'Name':<10} {'Age':<5} {'Occupation':<15}")
+print("-" * 30)
+
+for person in data:
+    print(f"{person['Name']:<10} {person['Age']:<5} {person['Occupation']:<15}")
